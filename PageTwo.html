@@ -4,11 +4,99 @@
 <head>
     <title>Page 2 Test</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        body {
+            background-color: hsl(0, 0%, 10%);
+        }
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: white;
+            font-size: 120%;
+        }
+
+        caption {
+            color: white;
+        }
+
+        table {
+            border-top: 1px solid white;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        tr{
+            border-bottom: 2px solid hsl(0, 0%, 31%);
+        }
+
+        tr:hover{
+            background-color: hsla(194, 78%, 28%, 0.562);
+        }
+
+        
+
+        blockquote {
+            color: white;
+            border: 2px solid dodgerblue;
+        }
+
+        address {
+            color: white;
+        }
+
+        pre {
+            color: white;
+            padding: 30px;
+        }
+
+        img {
+            margin: 35px;
+        }
+    </style>
 </head>
 
 <body>
     <h1>This should display a 2nd page</h1>
     <h1><a href="HelloWorld.html">Link to home page</a></h1>
+    <table style="width:65%;">
+        <caption>My opinion on champs</caption>
+        <colgroup>
+            <col span="1">
+            <col span="3" style="background-color: rgb(31, 31, 31);">
+        </colgroup>
+        <tr>
+            <th></th>
+            <th colspan="2">Gay</th>
+            <th>WeirdChamp</th>
+        </tr>
+        <tr style="height:50px;">
+            <th>Ints</th>
+            <td>Taric</td>
+            <td>Veigar</td>
+            <td>K'Sante</td>
+        </tr>
+        <tr style="height:50px;">
+            <th>Would smash</th>
+            <td>Kai'sa</td>
+            <td>Vladimir</td>
+            <td>Morde</td>
+        </tr>
+        <tr style="height:50px;">
+            <th>Racist</th>
+            <td>Kassadin</td>
+            <td>Draven</td>
+            <td>Shaco</td>
+        </tr>
+    </table>
 </body>
 
 </html>
