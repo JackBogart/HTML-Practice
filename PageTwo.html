@@ -62,7 +62,7 @@
             margin: 35px;
         }
 
-        ul {
+        .navigationBar {
             list-style-type: none;
             overflow: hidden;
             margin: 0;
@@ -71,11 +71,11 @@
 
         }
 
-        li {
+        .navigationBar li {
             float: left;
         }
 
-        li a {
+        .navigationBar li a {
             color: white;
             padding: 16px;
             text-decoration: none;
@@ -83,14 +83,28 @@
             text-align: center;
         }
 
-        li a:hover {
+        .navigationBar li a:hover {
             background-color: #111111;
+        }
+
+        .checklist {
+            background-color: hsl(0, 11%, 14%);
+            color: white;
+            text-decoration: circle;
+        }
+
+        .checklist ul{
+            list-style-type: square;
+        }
+
+        #portfolio {
+            color: red;
         }
     </style>
 </head>
 
 <body>
-    <ul>
+    <ul class="navigationBar">
         <li><a href="HelloWorld.html">Home</a></li>
     </ul>
     <h1>This should display a 2nd page</h1>
@@ -124,6 +138,32 @@
             <td>Shaco</td>
         </tr>
     </table>
+
+    <div class="checklist">
+        <ol type="I">
+            <li>Review HTML after finishing course</li>
+            <li>Learn CSS</li>
+            <li>Copy some websites to reinforce concepts as a project:
+                <ul>
+                    <li>Maybe youtube or a popular news article site</li>
+                    <li id="portfolio">Personal portfolio after done with first project, complete overhaul
+                        <ul style="list-style-type: disc;">
+                            <li>Have fun with the portfolio</li>
+                            <li>Add images of different languages</li>
+                            <li>Do cool CSS annimations for when I scroll</li>
+                            <li>Multipe pages</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <p>Class names can be applied to a group of HTML elements, used by multiple divs, spans, etcs.</p>
+    <p>ID names can only used to <span style="color:red;">ONE</span> element.</p>
+
+    <iframe src="HelloWorld.html" name="homePage_frame" title="Home Page" style="height:400px;width:1125px;border:3px solid blue;"></iframe>
+    <p><a href="HelloWorld.html" target="homePage_frame">HomePage</a> <span><a href="PageTwo.html" target="homePage_frame">PageTwo</a></span></p>
 </body>
 
 </html>
