@@ -3,7 +3,10 @@
 
 <head>
     <title>Page 2 Test</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="author" content="Jack Bogart">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background-color: hsl(0, 0%, 10%);
@@ -93,12 +96,20 @@
             text-decoration: circle;
         }
 
-        .checklist ul{
+        .checklist ul {
             list-style-type: square;
         }
 
         #portfolio {
             color: red;
+        }
+
+        header {
+            background-color: #202020;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
         }
     </style>
 </head>
@@ -107,7 +118,9 @@
     <ul class="navigationBar">
         <li><a href="HelloWorld.html">Home</a></li>
     </ul>
-    <h1>This should display a 2nd page</h1>
+    <header>
+        <h1>This should display a 2nd page</h1>
+    </header>
     <button onclick="document.getElementById('date').innerHTML=Date()">Current Date</button>
     <noscript>Sorry, no javascript 4 u</noscript>
     <p id="date"></p>
@@ -165,8 +178,10 @@
     <p>Class names can be applied to a group of HTML elements, used by multiple divs, spans, etcs.</p>
     <p>ID names can only used to <span style="color:red;">ONE</span> element.</p>
 
-    <iframe src="HelloWorld.html" name="homePage_frame" title="Home Page" style="height:400px;width:1125px;border:3px solid blue;"></iframe>
-    <p><a href="HelloWorld.html" target="homePage_frame">HomePage</a> <span><a href="PageTwo.html" target="homePage_frame">PageTwo</a></span></p>
+    <iframe src="HelloWorld.html" name="homePage_frame" title="Home Page"
+        style="height:400px;width:1125px;border:3px solid blue;"></iframe>
+    <p><a href="HelloWorld.html" target="homePage_frame">HomePage</a> <span><a href="PageTwo.html"
+                target="homePage_frame">PageTwo</a></span></p>
 </body>
 
 </html>
