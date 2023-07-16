@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
     <title>Page 2 Test</title>
@@ -111,6 +111,18 @@
             font-size: 20px;
             color: white;
         }
+
+        form {
+            background-color: #202020;
+            padding: 10px;
+            font-size: 17px;
+            color: white;
+        }
+
+        form input {
+            background-color: #3d3d3d;
+            color: white;
+        }
     </style>
 </head>
 
@@ -124,6 +136,7 @@
     <button onclick="document.getElementById('date').innerHTML=Date()">Current Date</button>
     <noscript>Sorry, no javascript 4 u</noscript>
     <p id="date"></p>
+
     <table style="width:65%;">
         <caption>My opinion on champs</caption>
         <colgroup>
@@ -182,6 +195,37 @@
         style="height:400px;width:1125px;border:3px solid blue;"></iframe>
     <p><a href="HelloWorld.html" target="homePage_frame">HomePage</a> <span><a href="PageTwo.html"
                 target="homePage_frame">PageTwo</a></span></p>
+
+    <p>Keyboard input style: <kbd>HUH</kbd> OH LOOK AN EMOJI &#128516;</p>
+
+    <form autocomplete="on">
+        <fieldset>
+            <legend>Personal Info:</legend>
+            <label for="firstname">First name:</label><br>
+            <input type="text" id="firstname" name="firstname" placeholder="John"><br>
+            <label for="lastname">Last name:</label><br>
+            <input type="text" id="lastname" name="lastname" placeholder="Doe"><br><br>
+
+            <label>Sex:</label><br>
+            <input type="radio" id="male" name="sex" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="sex" value="Female">
+            <label for="female">Female</label><br>
+        </fieldset>
+
+        <label>Modes of Transportation:</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">Bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2">Car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Bus">
+        <label for="vehicle3">Bus</label><br>
+
+        <label for="favcolor">Favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor"><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
 </body>
 
 </html>
